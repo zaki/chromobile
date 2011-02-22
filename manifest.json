@@ -1,0 +1,17 @@
+{
+  "name": "Chromobile",
+  "version": "0.1",
+  "description": "Chromobile extension to help debugging japanese mobile sites on chrome",
+  "background_page": "background.html",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["jquery-1.5.min.js", "chromobile.js"],
+      "css": ["emoji.css"]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}
+
